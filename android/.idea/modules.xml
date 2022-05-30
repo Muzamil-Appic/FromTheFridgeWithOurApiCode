@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FromTheFridge.iml" filepath="$PROJECT_DIR$/.idea/modules/FromTheFridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/130323612/FromTheFridge.@react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/130323612/FromTheFridge.@react-native-async-storage_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FromTheFridge.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FromTheFridge.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/130323612/FromTheFridge.react-native-async-storage_async-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/130323612/FromTheFridge.react-native-async-storage_async-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/813274057/FromTheFridge.react-native-fbsdk-next.iml" filepath="$PROJECT_DIR$/.idea/modules/813274057/FromTheFridge.react-native-fbsdk-next.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1493899742/FromTheFridge.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/-1493899742/FromTheFridge.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/186823559/FromTheFridge.react-native-firebase_auth.iml" filepath="$PROJECT_DIR$/.idea/modules/186823559/FromTheFridge.react-native-firebase_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1758755244/FromTheFridge.react-native-firebase_firestore.iml" filepath="$PROJECT_DIR$/.idea/modules/1758755244/FromTheFridge.react-native-firebase_firestore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2142569476/FromTheFridge.react-native-firebase_storage.iml" filepath="$PROJECT_DIR$/.idea/modules/-2142569476/FromTheFridge.react-native-firebase_storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/489681588/FromTheFridge.react-native-google-signin_google-signin.iml" filepath="$PROJECT_DIR$/.idea/modules/489681588/FromTheFridge.react-native-google-signin_google-signin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1930411992/FromTheFridge.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1930411992/FromTheFridge.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1169280448/FromTheFridge.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/-1169280448/FromTheFridge.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-737310051/FromTheFridge.react-native-svg.iml" filepath="$PROJECT_DIR$/.idea/modules/-737310051/FromTheFridge.react-native-svg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-2038901577/FromTheFridge.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/-2038901577/FromTheFridge.react-native-vector-icons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/650361362/react-native-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/650361362/react-native-gradle-plugin.iml" />
+    </modules>
+  </component>
+</project>

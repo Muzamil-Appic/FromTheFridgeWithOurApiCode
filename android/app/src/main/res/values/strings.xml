@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FromTheFridge</string>
+    <string name="facebook_app_id">1060115301255572</string>
+<string name="fb_login_protocol_scheme">fb1060115301255572</string>
+<string name="facebook_client_token">97f236c0b156f9ffec9332a66f1e4000</string>
+</resources>

@@ -1,0 +1,6 @@
+module Pods_FromTheFridge_FromTheFridgeTests {
+  umbrella header "Pods-FromTheFridge-FromTheFridgeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
