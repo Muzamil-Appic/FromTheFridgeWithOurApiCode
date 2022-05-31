@@ -1107,6 +1107,7 @@ export default function Home({ navigation }) {
 
 
   useEffect(() => {
+    console.disableYellowBox = true;
     empty()
     QuickKitchenDatafunction();
     FullKitchenDatafunction();

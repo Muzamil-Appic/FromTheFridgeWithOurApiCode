@@ -8,7 +8,7 @@ import SplashLogo from '../../Assets/Icons/SplashLogo.svg'
 import Appicon from '../../Assets/Icons/AppIcon.svg'
 export default function Splash({ navigation }) {
 
-
+  console.disableYellowBox = true;
   // timeout Function FOr replace page
   // setTimeout(() => {
   //   navigation.replace('Signin')

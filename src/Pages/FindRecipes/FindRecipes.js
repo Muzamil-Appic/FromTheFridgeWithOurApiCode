@@ -19,38 +19,30 @@ export default function FindRecipes({ navigation, route }) {
     const isFocused = useIsFocused();
     const loginpersonid = firebase.auth().currentUser.email
     const firebaseobect = firestore().collection('Favourite')
-    //  console.log("Last Screen Dat--------->", route?.params);
-
+    const [lastscreendata, setlastscreendata] = useState(route?.params)
     const [recoed, setrecoed] = useState([])
     const [pushrecord, setpushrecord] = useState([])
-    const [lastscreendata, setlastscreendata] = useState(route?.params)
     const [loader, setloader] = useState(false)
     const [muzamil, setmuzamil] = useState([])
     const [favoriteList, setFavoriteList] = useState([]);
     const [favouritedata, setfavouritedata] = useState([])
     const [recipiedescriptionsingredients, setrecipiedescriptionsingredients] = useState('')
-   const [ingredients, setingredients] = useState('')
-  let item=  {"ID": "45405", "image": "https://spoonacular.com/recipeImages/45405-312x231.jpg", "ingredients": [{"cookingMinutes": "-1", "image": "https://spoonacular.com/recipeImages/45405-556x370.jpg", "instructions": "", "preparationMinutes": "-1", "readyInMinutes": "45", "servings": "1"}], "title": "Apple & Sweet Potato Puree"}
+    const [ingredients, setingredients] = useState('')
     useEffect(() => {
-        getfavourite()
-        apitest()
+        GetFavourite()
+        GetAPiResponse()
     }, [isFocused]);
 
-
-
-
-
-
-    const getfavourite = async () => {
+    const GetFavourite = async () => {
         setloader(true)
         const id = firebase.auth().currentUser.email
-       // console.log("Login Person ID------->", id);
+        // console.log("Login Person ID------->", id);
         firestore()
             .collection('Favourite').where('loginpersonid', '==', id)
             .onSnapshot(querySnapshot => {
                 const favouritedata = [];
                 querySnapshot.forEach(documentSnapshot => {
-                //    console.log("Favourites Record---->", documentSnapshot.data());
+                    console.log("Favourites Record---->", documentSnapshot.data());
                     favouritedata.push({
                         ...documentSnapshot.data(),
                         key: documentSnapshot.id,
@@ -66,7 +58,7 @@ export default function FindRecipes({ navigation, route }) {
         setFavoriteList([...favoriteList, restaurant]);
         const emails = firebase.auth().currentUser.email
         const uniq = emails + restaurant.ID;
-      //  console.log("---->", uniq);
+        //  console.log("---->", uniq);
         const userfavourites = firebaseobect.doc(uniq)
         {
             restaurant?.ingredients == "" ?
@@ -80,7 +72,7 @@ export default function FindRecipes({ navigation, route }) {
                     servingsize: "N/A",
                     directions: "N/A",
                 }).then(() => {
-                  //  console.log("Favourite");
+                    //  console.log("Favourite");
                 })
                     .catch((error) => {
                         alert(error)
@@ -98,7 +90,7 @@ export default function FindRecipes({ navigation, route }) {
                     servingsize: restaurant?.ingredients[0]?.servings,
                     directions: restaurant?.ingredients[0]?.instructions,
                 }).then(() => {
-                  //  console.log("Favourite");
+                    //  console.log("Favourite");
                 })
                     .catch((error) => {
                         alert(error)
@@ -115,21 +107,17 @@ export default function FindRecipes({ navigation, route }) {
         firestore().collection('Favourite').doc(uniq).delete()
         setFavoriteList(filteredList);
     };
-    // function to check if an item exists in the favorite list or not
     const ifExists = restaurant => {
         if (favoriteList.filter(item => item.ID === restaurant.ID).length > 0) {
             return true;
         }
         return false;
     };
-
-
-
-    const apitest = async () => {
+    const GetAPiResponse = async () => {
         let newingredients = ''
         let firbaseList = []
         let islistf = []
-     
+
 
         for (let i = 0; i < route.params.length; i++) {
             if (route.params[i].selected === true) {
@@ -141,12 +129,12 @@ export default function FindRecipes({ navigation, route }) {
                 }
                 setingredients(newingredients)
             }
-            console.log('====================================', newingredients,"----->",ingredients);
+            console.log('====================================', newingredients, "----->", ingredients);
         }
         setloader(true)
         await firebaseobect.where('loginpersonid', '==', loginpersonid).get()
             .then(querySnapshot => {
-               // console.log('Total users: ', querySnapshot.size);
+                // console.log('Total users: ', querySnapshot.size);
                 querySnapshot.forEach(documentSnapshot => {
                     // console.log('====================================');
                     // console.log("Document Data---->",documentSnapshot.data());
@@ -158,7 +146,7 @@ export default function FindRecipes({ navigation, route }) {
         await fetch(`http://waqarulhaq.com/fromTheFridge/get-recipes.php?combinations=${newingredients}`)
             .then(response => response.json())
             .then(response => {
-                   console.log("yh response aa rha hay api sy ingredients ka", response);
+                console.log("yh response aa rha hay api sy ingredients ka", response);
 
                 for (let index = 0; index < firbaseList.length; index++) {
                     for (let j = 0; j < response?.data?.length; j++) {
@@ -166,7 +154,7 @@ export default function FindRecipes({ navigation, route }) {
                             islistf.push(response?.data[j])
                     }
                 }
-            //    console.log('111', islistf);
+                console.log('111', islistf);
                 setFavoriteList(islistf)
                 setpushrecord(response.data)
             })
@@ -175,17 +163,8 @@ export default function FindRecipes({ navigation, route }) {
         setloader(false)
 
     }
-
-
-
-
-
-
-
-
-
     const renderfunction = ({ item }) => {
-//console.log("___________________", item);
+        //console.log("___________________", item);
         return (
             <View>
                 <View style={Styles.renderfunctionmainview}>
@@ -223,7 +202,6 @@ export default function FindRecipes({ navigation, route }) {
             </View>
         )
     }
-
     return (
         <SafeAreaView style={Styles.Container}>
             <View
@@ -276,7 +254,7 @@ export default function FindRecipes({ navigation, route }) {
                     // ListFooterComponentStyle={{height:200}}
                     />
             }
-{/* 
+            {/* 
             <TouchableOpacity style={{ marginTop: rh(2) }} onPress={() => navigation.navigate('RecipiesDescription', {item,muzamil})}>
                 <ForwardSvg height={'25px'} width={'25px'} />
             </TouchableOpacity> */}

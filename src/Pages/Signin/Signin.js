@@ -118,7 +118,7 @@ const loginWithfacebookHandler = async () => {
           await auth()
             .signInWithCredential(facebookCredential)
            .then(e=>{
-             console.log(6666);
+             console.log(e);
            });
 
           // initUser(accessToken);

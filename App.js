@@ -4,7 +4,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import StackNavigations from './src/Navigations/StackNavigations'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 export default function App({navigation}) {
-
+  console.disableYellowBox = true;
   return (
     <SafeAreaProvider>
       <StackNavigations />

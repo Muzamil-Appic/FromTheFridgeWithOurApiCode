@@ -94,7 +94,7 @@ export default function RecipiesDescription({ navigation, route }) {
                         </View>
                     </View>
 
-                    <View style={{ left: rw(3), height: rh(17), alignItems: "center", justifyContent: "center" }}>
+                    <View style={{ left: rw(3), height: rh(17), alignItems: "center", justifyContent: "center", }}>
                         {/* <TouchableOpacity style={{ marginTop: rh(1) }}
                             onPress={() => (ifExists(item) ? onRemoveFavorite(item) : onFavorite(item))}
                         >
@@ -397,13 +397,17 @@ export default function RecipiesDescription({ navigation, route }) {
                     }}
                 >
                     {favirt ? (
-                        <TouchableOpacity onPress={() => DoUnlike()}>
-                            <Fontisto size={20} name={'favorite'} color={Colors.White} />
-                        </TouchableOpacity>
+                        
+                            <TouchableOpacity   onPress={() => DoUnlike()}>
+                                <Fontisto size={25} name={'favorite'} color={Colors.White} />
+                            </TouchableOpacity>
+                       
                     ) : (
-                        <TouchableOpacity onPress={() => DoFavourite()}>
-                            <Fontisto size={20} name={'favorite'} color={Colors.dark} />
-                        </TouchableOpacity>
+                        
+                            <TouchableOpacity onPress={() => DoFavourite()} >
+                                <Fontisto size={25} name={'favorite'} color={Colors.dark} />
+                            </TouchableOpacity>
+                        
                     )}
 
                     {/* <TouchableOpacity onPress={() => sharefunction()}>

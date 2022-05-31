@@ -29,7 +29,7 @@ export default function Profile({ navigation }) {
         setloader(true)
         let user = firebase.auth().currentUser.email
 
-       // let user = "muzamilappic@gmail.com"
+       //let user = "muzamilappic@gmail.com"
         //firebase.auth().currentUser.email
         firestore()
             .collection('Users')
@@ -173,7 +173,6 @@ export default function Profile({ navigation }) {
 
 
     const signoutfunction = () => {
-        
         firebase.auth().signOut()
         navigation.replace('Signin')
         AsyncStorage.clear()
@@ -200,8 +199,6 @@ export default function Profile({ navigation }) {
     const [loadertwo, setloadertwo] = useState(false)
 
     const siz = Dimensions.get('window').height
-
-
 
     return (
         <SafeAreaView style={Styles.Container}>
