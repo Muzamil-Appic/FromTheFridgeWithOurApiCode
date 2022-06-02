@@ -1091,7 +1091,8 @@ export default function Home({ navigation }) {
   const [holdingredientstwo, setholdingredientstwo] = useState([])
   const [quickkitchenloader, setquickkitchenloader] = useState(false)
   const [fullkitchenloader, setfullkitchenloader] = useState(false)
-
+  const [muzamilingredientsone, setmuzamilingredientsone] = useState([])
+  const [muzamilingredientstwo, setmuzamilingredientstwo] = useState([])
 
 
 
@@ -1103,6 +1104,8 @@ export default function Home({ navigation }) {
     settotalitems(0)
     setholdingredientstwo([])
     setholdingredients([])
+    setmuzamilingredientsone([])
+    setmuzamilingredientstwo([])
   }
 
 
@@ -1296,54 +1299,63 @@ export default function Home({ navigation }) {
   const quickcheckedvalue = (item, index) => {
     console.log("Yh Item Ja rha ay click pr", item);
     let temp = [...kitchenData]
-    
-    let dd
+
+
 
     if (item.selected) {
       item.selected = false;
       settotalitems(totalitems - 1)
-      
+      // getquickitems(item)
 
     }
     else {
       item.selected = true;
       settotalitems(totalitems + 1)
-      
+      //  getquickitems(item)
 
     }
     temp[index] = item;
     setkitchenData(temp)
-   setholdingredients(temp)
-
-
+    setholdingredients(temp)
   }
   const fullcheckvalue = (item, index) => {
     let temp = [...FullKitchenData]
-
     if (item.selected) {
       item.selected = false;
       settotalitems(totalitems - 1)
-      //  setholdingredients({id:item})
-      console.log("unselect", item);
+      getfullitems(item)
     }
     else {
       item.selected = true;
       settotalitems(totalitems + 1)
-      //  setholdingredients({id:item})
-      console.log("select", item);
+      getfullitems(item)
     }
     temp[index] = item;
-
     setholdingredientstwo(temp)
     setFullKitchenData(temp)
+
   }
+
+
+
+  const getfullitems = (item) => {
+    let kk = item;
+    let arr = muzamilingredientstwo.concat(kk)
+    setmuzamilingredientstwo(arr)
+
+  }
+
+
+
+
+
 
   const countfun = () => {
     if (totalitems === 0) {
       alert("Please Select An Item First")
       return;
     }
-    navigation.navigate('Selectedingredients', { holdingredients, holdingredientstwo })
+    navigation.navigate('Selectedingredients', { holdingredients, muzamilingredientstwo })
     //  console.log("Holding Ingredients",holdingredients);
     //  console.log("Holding Ingredients Two",holdingredientstwo);
   }

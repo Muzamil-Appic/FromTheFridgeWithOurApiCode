@@ -13,7 +13,7 @@ import Colors from '../../Global/Colors';
 import FontSize from '../../Global/FontSizes';
 import ActivityLoader from '../../Components/ActivityLoader'
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
-import { LoginManager, AccessToken,GraphRequestManager ,GraphRequest} from 'react-native-fbsdk-next';
+import { LoginManager, AccessToken, GraphRequestManager, GraphRequest } from 'react-native-fbsdk-next';
 
 GoogleSignin.configure({
   webClientId: '324447483484-7g1ue1gd2eeqb6te3e57sqied9edc33k.apps.googleusercontent.com',
@@ -75,83 +75,84 @@ export default function Signin({ navigation }) {
   }
 
 
-//   const onFacebookButtonPress=async()=>{
-//     console.log('====================================');
-//     console.log("ok");
-//     console.log('====================================');
-//        const result = await LoginManager.logInWithPermissions(['public_profile', 'email']);
-// console.log(result);
+  //   const onFacebookButtonPress=async()=>{
+  //     console.log('====================================');
+  //     console.log("ok");
+  //     console.log('====================================');
+  //        const result = await LoginManager.logInWithPermissions(['public_profile', 'email']);
+  // console.log(result);
 
-//   }
+  //   }
 
-const loginWithfacebookHandler = async () => {
-  // if(LoginManager.getInstance()!=null){
-  // LoginManager.getInstance().logOut();
-  // }
-  // console.log(LoginManager.getI)
-  // await Clear('user');
-  // await Clear('bio');
- // LoginManager.logOut();
-  LoginManager.logInWithPermissions(['public_profile', 'email']).then(
-    function (result) {
-      if (result.isCancelled) {
-      
-        console.log('Login cancelled');
-      } else {
-        console.log('Login success with permissions: ' + result);
-        console.log("Its results",result);
-        AccessToken.getCurrentAccessToken().then(async data => {
-          const processRequest = new GraphRequest(
-            '/me?fields=name,email,picture.type(large)',
-            null,
-            await getResponseInfo,
-          );
-          // Start the graph request.
-          new GraphRequestManager().addRequest(processRequest).start();
+  const loginWithfacebookHandler = async () => {
+    // if(LoginManager.getInstance()!=null){
+    // LoginManager.getInstance().logOut();
+    // }
+    // console.log(LoginManager.getI)
+    // await Clear('user');
+    // await Clear('bio');
+    // LoginManager.logOut();
+    LoginManager.logInWithPermissions(['public_profile', 'email']).then(
+      function (result) {
+        if (result.isCancelled) {
 
-          const {accessToken} = data;
-          const facebookCredential =
-            auth.FacebookAuthProvider.credential(accessToken);
+          console.log('Login cancelled');
+        } else {
+          console.log('Login success with permissions: ' + result);
+          console.log("Its results", result);
+          AccessToken.getCurrentAccessToken().then(async data => {
+            const processRequest = new GraphRequest(
+              '/me?fields=name,email,picture.type(large)',
+              null,
+              await getResponseInfo,
+            );
+            // Start the graph request.
+            new GraphRequestManager().addRequest(processRequest).start();
 
-          // Sign-in the user with the credential
-          // console.log(facebookCredential);
-          await auth()
-            .signInWithCredential(facebookCredential)
-           .then(e=>{
-             console.log(e);
-           });
-
-          // initUser(accessToken);
-        });
-      }
-    },
-    function (error) {
-      console.log('Login fail with error: ' + error);
-      // showMessage({
-      //   type: 'info',
-      //   message: 'Login failed.Please try again',
-      // });
-    },
-  );
-};
+            const { accessToken } = data;
+            const facebookCredential =
+              auth.FacebookAuthProvider.credential(accessToken);
 
 
+            // Sign-in the user with the credential
+            // console.log(facebookCredential);
+            await auth()
+              .signInWithCredential(facebookCredential)
+              .then(e => {
+                console.log(e);
+              });
 
+            // initUser(accessToken);
+          });
+        }
+      },
+      function (error) {
+        console.log('Login fail with error: ' + error);
+        // showMessage({
+        //   type: 'info',
+        //   message: 'Login failed.Please try again',
+        // });
+      },
+    );
+  };
 
 
 
-const getResponseInfo = async (error, result) => {
-  if (error) {
-    //Alert for the Error
-    alert('Error fetching data: ' + error.toString());
-  } else {
-    //response alert
-    // console.log(JSON.stringify(result));
 
-    
-    console.log("yh results hay",result)
-   
-    
+
+
+  const getResponseInfo = async (error, result) => {
+    if (error) {
+      //Alert for the Error
+      alert('Error fetching data: ' + error.toString());
+    } else {
+      //response alert
+      // console.log(JSON.stringify(result));
+
+
+      console.log("yh results hay", result)
+
+
       const userdata = firestore_ref.doc(result.email)
       userdata.set({
         email: result.email,
@@ -171,18 +172,18 @@ const getResponseInfo = async (error, result) => {
         )
       )
 
-    .then(() => {
-      empty();
-      navigation.replace('TabNavigations')
-      
-    })
-    .catch((error) => {
-      
-      alert(error)
-      console.log("Error---->", error);
-    })
-  }
-};
+        .then(() => {
+          empty();
+          navigation.replace('TabNavigations')
+
+        })
+        .catch((error) => {
+
+          alert(error)
+          console.log("Error---->", error);
+        })
+    }
+  };
 
 
 
@@ -191,9 +192,9 @@ const getResponseInfo = async (error, result) => {
     setgoogleloader(true)
     await GoogleSignin.hasPlayServices();
     const userinfo = await GoogleSignin.signIn();
- //  console.log("------->user infooooo909090", userinfo)
+    //  console.log("------->user infooooo909090", userinfo)
     const googleCredential = auth.GoogleAuthProvider.credential(userinfo.idToken);
-  //  console.log("googlecredential9090909", googleCredential)
+    //  console.log("googlecredential9090909", googleCredential)
     const loggeduser = auth().signInWithCredential(googleCredential)
       ///   console.log(userinfo)
       // Sign-in the user with the credential
@@ -229,7 +230,7 @@ const getResponseInfo = async (error, result) => {
       .catch((error) => {
         setgoogleloader(false)
         alert(error)
-   //     console.log("Error---->", error);
+        //     console.log("Error---->", error);
       })
   }
 
@@ -249,13 +250,13 @@ const getResponseInfo = async (error, result) => {
       .signInWithEmailAndPassword(email.trim(), password)
       .then((user) => {
         console.log("user login information----->", user.user.email)
-          AsyncStorage.setItem(
-            'userdetails',
-            JSON.stringify({
-              email:  user.user.email,
-              id:  user.user.email,
-            })
-          )  
+        AsyncStorage.setItem(
+          'userdetails',
+          JSON.stringify({
+            email: user.user.email,
+            id: user.user.email,
+          })
+        )
         empty()
         setloader(false)
         navigation.replace('TabNavigations')
@@ -282,27 +283,27 @@ const getResponseInfo = async (error, result) => {
     // Attempt login with permissions
     console.log("Ok");
     const result = await LoginManager.logInWithPermissions(['public_profile', 'email']);
-  
+
     console.log('1====================================');
     console.log(result);
     console.log('1====================================');
     if (result.isCancelled) {
       throw 'User cancelled the login process';
     }
-  
-  //   // Once signed in, get the users AccesToken
-  //   const data = await AccessToken.getCurrentAccessToken();
-  
 
-  //   if (!data) {
-  //     throw 'Something went wrong obtaining access token';
-  //   }
-  
-  //   // Create a Firebase credential with the AccessToken
-  //   const facebookCredential = auth.FacebookAuthProvider.credential(data.accessToken);
-  
-  //   // Sign-in the user with the credential
-  //  return auth().signInWithCredential(facebookCredential);
+    //   // Once signed in, get the users AccesToken
+    //   const data = await AccessToken.getCurrentAccessToken();
+
+
+    //   if (!data) {
+    //     throw 'Something went wrong obtaining access token';
+    //   }
+
+    //   // Create a Firebase credential with the AccessToken
+    //   const facebookCredential = auth.FacebookAuthProvider.credential(data.accessToken);
+
+    //   // Sign-in the user with the credential
+    //  return auth().signInWithCredential(facebookCredential);
   }
 
   return (
@@ -377,14 +378,13 @@ const getResponseInfo = async (error, result) => {
         <Linesvg height={'24px'} width={'30px'} />
       </View>
       <View style={[Styles.svgmainstyle]}>
-        <TouchableOpacity 
+        {/* <TouchableOpacity 
          onPress={() => loginWithfacebookHandler()}
          
         style={Styles.svgstyle}>
           <FaceBook height={'24px'} width={'24px'} />
           <Text style={Styles.fbgoogletext}>Facebook</Text>
-        </TouchableOpacity>
-
+        </TouchableOpacity> */}
         {googleloader ?
           <ActivityLoader />
           :

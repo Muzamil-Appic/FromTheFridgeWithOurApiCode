@@ -207,7 +207,9 @@ const onFavorite = restaurant => {
             setpushrecord(response.data)
         })
 
-        .catch(err => console.error(err));
+        // .catch(err => console.error(err));
+       .catch(err => 
+        alert(err));
         recoed.push(pushrecord)
          setloader(false)
    

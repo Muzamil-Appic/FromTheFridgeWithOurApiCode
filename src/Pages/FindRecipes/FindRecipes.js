@@ -146,7 +146,7 @@ export default function FindRecipes({ navigation, route }) {
         await fetch(`http://waqarulhaq.com/fromTheFridge/get-recipes.php?combinations=${newingredients}`)
             .then(response => response.json())
             .then(response => {
-                console.log("yh response aa rha hay api sy ingredients ka", response);
+              //  console.log("yh response aa rha hay api sy ingredients ka", response);
 
                 for (let index = 0; index < firbaseList.length; index++) {
                     for (let j = 0; j < response?.data?.length; j++) {
@@ -158,9 +158,10 @@ export default function FindRecipes({ navigation, route }) {
                 setFavoriteList(islistf)
                 setpushrecord(response.data)
             })
-            .catch(err => console.error(err));
-        recoed.push(pushrecord)
-        setloader(false)
+            // .catch(err => console.error(err));
+            .catch(err => alert(err));
+            recoed.push(pushrecord)
+            setloader(false)
 
     }
     const renderfunction = ({ item }) => {

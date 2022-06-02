@@ -8,7 +8,7 @@ import {
   ScrollView,
   ActivityIndicator
 } from 'react-native';
- import { useIsFocused } from '@react-navigation/native';
+import { useIsFocused } from '@react-navigation/native';
 import React, { useState, useEffect } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -35,37 +35,37 @@ export default function Selectedingredients({ navigation, route }) {
 
 
 
-console.log("Holding One",route?.params?.holdingredients);
-console.log("Holding Two",route?.params?.holdingredientstwo);
+  console.log("Holding One", route?.params?.holdingredients);
+  console.log("Holding Two", route?.params?.muzamilingredientstwo);
 
   useEffect(() => {
-  //  setloader(true)
-  //   getdatafromkitchen();
-  //  // getdatafromfullkitchen();
-  //   setloader(false)
-  getdatafromkitchen()
+    //  setloader(true)
+    //   getdatafromkitchen();
+    //  // getdatafromfullkitchen();
+    //   setloader(false)
+    getdatafromkitchen()
   }, [])
 
 
 
 
   const getdatafromkitchen = () => {
-    let values=[]
+    let values = []
     setloader(true)
-    route?.params?.holdingredients.map((e) => {
+    route?.params?.muzamilingredientstwo.map((e) => {
       if (e.selected === true) {
         values.push(e);
       }
     })
-    route?.params?.holdingredientstwo.map((e) => {
+    route?.params?.holdingredients.map((e) => {
       if (e.selected === true) {
         console.log(e)
         values.push(e);
       }
-      else{
+      else {
         console.log(e);
       }
-      console.log("----->",e);
+      console.log("----->", e);
     })
     // data.map((e) => {
     //   newdata.push(e)
@@ -76,7 +76,7 @@ console.log("Holding Two",route?.params?.holdingredientstwo);
   }
 
 
-  const empty=()=>{
+  const empty = () => {
     setdata('')
   }
 
@@ -146,8 +146,8 @@ console.log("Holding Two",route?.params?.holdingredientstwo);
     );
   };
 
- 
- 
+
+
   return (
     <SafeAreaView style={Styles.Container}>
       <View
@@ -163,7 +163,7 @@ console.log("Holding Two",route?.params?.holdingredientstwo);
           onPress={() => navigation.replace('TabNavigations')}>
           <Ionicons name="chevron-back" size={30} color={Colors.White} />
         </TouchableOpacity>
-        <Text 
+        <Text
           style={{
             color: Colors.White,
             paddingHorizontal: wp(15),
@@ -189,16 +189,16 @@ console.log("Holding Two",route?.params?.holdingredientstwo);
 
 
         {loader ?
-          <View style={{ position:"absolute",justifyContent: 'center', alignSelf: "center",  }}>
+          <View style={{ position: "absolute", justifyContent: 'center', alignSelf: "center", }}>
             <ActivityIndicator size={'large'} color={Colors.purple} />
           </View>
           :
 
-        <FlatList
-          data={newdata}
-          keyExtractor={item => item.itemid}
-          renderItem={renderfunction}
-        />
+          <FlatList
+            data={newdata}
+            keyExtractor={item => item.itemid}
+            renderItem={renderfunction}
+          />
 
         }
 
