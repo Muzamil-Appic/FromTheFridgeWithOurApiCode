@@ -1,4 +1,4 @@
-import { View, Text, TextInput, TouchableOpacity, ActivityIndicator, Modal, } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, ActivityIndicator, Modal, Platform } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -6,7 +6,11 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
+import { AppleButton } from '@invertase/react-native-apple-authentication';
+import { appleAuth } from '@invertase/react-native-apple-authentication';
 
+//  import { AppleAuthRequestOperation ,appleAuth} from '@invertase/react-native-apple-authentication';
+import AppleIcon from '../../Assets/Icons/AppleIcon.svg'
 //Global
 import Styles from './Signin.Styles';
 import Colors from '../../Global/Colors';
@@ -17,6 +21,7 @@ import { LoginManager, AccessToken, GraphRequestManager, GraphRequest } from 're
 
 GoogleSignin.configure({
   webClientId: '324447483484-7g1ue1gd2eeqb6te3e57sqied9edc33k.apps.googleusercontent.com',
+  offlineAccess: true
 });
 
 //firebase
@@ -41,6 +46,7 @@ export default function Signin({ navigation }) {
   const [validateemail, setvalidateemail] = useState(false)
   const [validatepassword, setvalidatepassword] = useState(false)
   const [googleloader, setgoogleloader] = useState(false)
+  const [appleloader, setappleloader] = useState(false)
   const firestore_ref = firestore().collection('Users')
 
 
@@ -138,7 +144,114 @@ export default function Signin({ navigation }) {
 
 
 
+  async function onAppleButtonPress() {
+    // Start the sign-in request
+    console.log("Step 1---->");
+    const appleAuthRequestResponse = await appleAuth.performRequest({
+      requestedOperation: appleAuth.Operation.LOGIN,
+      requestedScopes: [appleAuth.Scope.EMAIL, appleAuth.Scope.FULL_NAME],
+    });
 
+    // Ensure Apple returned a user identityToken
+    if (!appleAuthRequestResponse.identityToken) {
+      throw new Error('Apple Sign-In failed - no identify token returned');
+    }
+    console.log("Step 2---->");
+    //  Create a Firebase credential from the response
+    const { identityToken, nonce } = appleAuthRequestResponse;
+    const appleCredential = auth.AppleAuthProvider.credential(identityToken, nonce);
+    console.log('====================================');
+    console.log(appleCredential);
+    console.log('====================================');
+    //  Sign the user in with the credential
+    await auth().signInWithCredential(appleCredential)
+      .then((loggeduser) => {
+        console.log("Step 3---->");
+        console.log('====================================');
+        console.log("----->", loggeduser.additionalUserInfo);
+        console.log('====================================');
+        console.log("Step 4---->");
+        console.log('====================================');
+        console.log("----->", loggeduser.user);
+        console.log('====================================');
+        const userdata = firestore_ref.doc(loggeduser.user.email)
+        userdata.set({
+          email: loggeduser.user.email,
+          id: loggeduser.user.email,
+          name: '',
+          phonenumber: '',
+          country: '',
+          city: '',
+          address: '',
+        }, { merge: true }).then(
+          AsyncStorage.setItem(
+            'userdetails',
+            JSON.stringify({
+              email: loggeduser.user.email,
+              id: loggeduser.user.email,
+            })
+          )
+        )
+
+      }).then(() => {
+        navigation.replace('TabNavigations')
+      })
+      .catch((error) => {
+        alert(error)
+        console.log("Error---->", error);
+      })
+
+
+  }
+
+
+
+  // const loginWithApple = async () => {
+  //   // Start the sign-in request
+  //   try {
+  //     console.log('TRY');
+  //     const appleAuthRequestResponse = await appleAuth.performRequest({
+  //       requestedOperation: AppleAuthRequestOperation.LOGIN,
+  //       requestedScopes: [
+  //         AppleAuthRequestScope.EMAIL,
+  //         AppleAuthRequestScope.FULL_NAME,
+  //       ],
+  //     });
+
+  //     console.log('CHECK TOKEN');
+  //     // Ensure Apple returned a user identityToken
+  //     if (!appleAuthRequestResponse.identityToken) {
+  //       throw 'Apple Sign-In failed - no identify token returned';
+  //     }
+
+  //     // Create a Firebase credential from the response
+  //     const {
+  //       nonce,
+  //       identityToken,
+  //     } = appleAuthRequestResponse;
+
+  //     if (identityToken) {
+  //       console.log(nonce, identityToken);
+
+  //       // Sign the user in with the credential
+  //       const appleCredential = auth.AppleAuthProvider.credential(
+  //         identityToken,
+  //         nonce,
+  //       );
+  //       auth()
+  //         .signInWithCredential(appleCredential)
+  //         .then((response) => console.log('loginWithApple', response))
+  //         .catch((error) => console.log('222222', error));
+  //       console.warn(
+  //         `Firebase authenticated via Apple, UID: ${userCredential.user.uid}`,
+  //       );
+  //     } else {
+  //       console.log('loginWithApple no token - failed sign-in');
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
 
   const getResponseInfo = async (error, result) => {
@@ -188,11 +301,14 @@ export default function Signin({ navigation }) {
 
 
   async function onGoogleButtonPress() {
-    // Get the users ID token
+    console.log("Step 1");
     setgoogleloader(true)
+    console.log("Step 2");
     await GoogleSignin.hasPlayServices();
+    console.log("Step 3");
     const userinfo = await GoogleSignin.signIn();
-    //  console.log("------->user infooooo909090", userinfo)
+    console.log("Step 4");
+    // console.log("------->user infooooo909090", userinfo)
     const googleCredential = auth.GoogleAuthProvider.credential(userinfo.idToken);
     //  console.log("googlecredential9090909", googleCredential)
     const loggeduser = auth().signInWithCredential(googleCredential)
@@ -233,6 +349,10 @@ export default function Signin({ navigation }) {
         //     console.log("Error---->", error);
       })
   }
+
+
+
+
 
 
   async function LoginUser() {
@@ -377,27 +497,55 @@ export default function Signin({ navigation }) {
         </Text>
         <Linesvg height={'24px'} width={'30px'} />
       </View>
-      <View style={[Styles.svgmainstyle]}>
-        {/* <TouchableOpacity 
-         onPress={() => loginWithfacebookHandler()}
-         
-        style={Styles.svgstyle}>
-          <FaceBook height={'24px'} width={'24px'} />
-          <Text style={Styles.fbgoogletext}>Facebook</Text>
-        </TouchableOpacity> */}
-        {googleloader ?
-          <ActivityLoader />
-          :
-          <TouchableOpacity style={Styles.svgstyle}
-            onPress={() => onGoogleButtonPress()}
-          >
-            <Google height={'24px'} width={'24px'} />
-            <Text style={Styles.fbgoogletext}>Google</Text>
+      {Platform.OS === 'ios' && Platform.Version >= 13 ?
+        <View style={[Styles.svgmainstyle]}>
+          {/* <TouchableOpacity
+            onPress={() => loginWithfacebookHandler()}
+
+            style={Styles.svgstyle}>
+            <FaceBook height={'24px'} width={'24px'} />
+            <Text style={Styles.fbgoogletext}>Facebook</Text>
+          </TouchableOpacity> */}
+          <TouchableOpacity
+            onPress={() => onAppleButtonPress()}
+
+            style={Styles.svgstyle}>
+            <AppleIcon height={'24px'} width={'24px'} />
+            <Text style={Styles.fbgoogletext}>Apple</Text>
           </TouchableOpacity>
-        }
-      </View>
+          {googleloader ?
+            <ActivityLoader />
+            :
+            <TouchableOpacity style={Styles.svgstyle}
+              onPress={() => onGoogleButtonPress()}
+            >
+              <Google height={'24px'} width={'24px'} />
+              <Text style={Styles.fbgoogletext}>Google</Text>
+            </TouchableOpacity>
+          }
+        </View>
 
+        :
+        <View style={[Styles.svgmainstyle]}>
+          {/* <TouchableOpacity
+            onPress={() => loginWithfacebookHandler()}
 
+            style={Styles.svgstyle}>
+            <FaceBook height={'24px'} width={'24px'} />
+            <Text style={Styles.fbgoogletext}>Facebook</Text>
+          </TouchableOpacity> */}
+          {googleloader ?
+            <ActivityLoader />
+            :
+            <TouchableOpacity style={Styles.svgstyle}
+              onPress={() => onGoogleButtonPress()}
+            >
+              <Google height={'24px'} width={'24px'} />
+              <Text style={Styles.fbgoogletext}>Google</Text>
+            </TouchableOpacity>
+          }
+        </View>
+      }
 
       {/* <TouchableOpacity style={Styles.svgstyle}
         onPress={() => onGoogleButtonPress()}

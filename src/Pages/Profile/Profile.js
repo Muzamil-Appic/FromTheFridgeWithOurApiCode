@@ -18,7 +18,7 @@ import { firebase } from '@react-native-firebase/auth'
 import firestore from '@react-native-firebase/firestore'
 import ActivityLoader from '../../Components/ActivityLoader';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
+import Entypo from 'react-native-vector-icons/Entypo'
 import { useIsFocused } from '@react-navigation/native';
 
 export default function Profile({ navigation }) {
@@ -29,7 +29,7 @@ export default function Profile({ navigation }) {
         setloader(true)
         let user = firebase.auth().currentUser.email
 
-       //let user = "muzamilappic@gmail.com"
+        //let user = "muzamilappic@gmail.com"
         //firebase.auth().currentUser.email
         firestore()
             .collection('Users')
@@ -225,8 +225,8 @@ export default function Profile({ navigation }) {
                     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
                         <View style={Styles.topvw}>
                             <TextInput placeholder='Name' value={name} onChangeText={value => setname(value)} style={Styles.txtinptmailname} placeholderTextColor={Colors.dark} />
-                            <View style={{ height: rh(7), width: rw(80), borderRadius: 40, backgroundColor: Colors.txtinptcolor, justifyContent: 'center' }}>
-                                <Text style={{ fontSize: FontSize.font17, paddingLeft: rw(7), color: Colors.black }} > {email}</Text>
+                            <View style={{ height: rh(7), width: rw(80), borderRadius: 40, backgroundColor: Colors.txtinptcolor, justifyContent: 'center', alignContent: "center", alignItems: "center" }}>
+                                <Text style={{ fontSize: FontSize.font17, paddingLeft: rw(7), color: Colors.black, paddingRight: rw(2), alignSelf: "center", }} > {email}</Text>
                             </View>
                             <TouchableOpacity style={Styles.chngpasbtn}
                                 onPress={() => setModalVisible(true)}
@@ -286,6 +286,11 @@ export default function Profile({ navigation }) {
                         marginTop: rh(20)
 
                     }}>
+                    <View style={{ height: rw(5), width: rw(5), justifyContent: 'flex-end', alignContent: "flex-end", alignItems: "flex-end", margin: rw(2) }}>
+                        <TouchableOpacity onPress={() => setModalVisible(false)}>
+                            <Entypo name='cross' size={25} color={Colors.purple} />
+                        </TouchableOpacity>
+                    </View>
                     <View>
                         <Text style={{ fontSize: FontSize.font20, textAlign: "center", color: Colors.black, marginVertical: rh(3), fontWeight: '700' }}>Change Password</Text>
                     </View>

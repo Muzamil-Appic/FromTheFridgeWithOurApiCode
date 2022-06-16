@@ -33,6 +33,13 @@ export default function FindRecipes({ navigation, route }) {
         GetAPiResponse()
     }, [isFocused]);
 
+
+
+
+console.log("__________>",route?.params);
+
+
+
     const GetFavourite = async () => {
         setloader(true)
         const id = firebase.auth().currentUser.email
@@ -146,7 +153,7 @@ export default function FindRecipes({ navigation, route }) {
         await fetch(`http://waqarulhaq.com/fromTheFridge/get-recipes.php?combinations=${newingredients}`)
             .then(response => response.json())
             .then(response => {
-              //  console.log("yh response aa rha hay api sy ingredients ka", response);
+                console.log("yh response aa rha hay api sy ingredients ka", response);
 
                 for (let index = 0; index < firbaseList.length; index++) {
                     for (let j = 0; j < response?.data?.length; j++) {
