@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image, FlatList, ActivityIndicator } from 'react-native'
+import { View, Text, TouchableOpacity, Alert, Image, FlatList, ActivityIndicator } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import { responsiveHeight as rh, responsiveWidth as rw } from 'react-native-responsive-dimensions'
 import Colors from '../../Global/Colors';
@@ -36,7 +36,7 @@ export default function FindRecipes({ navigation, route }) {
 
 
 
-console.log("__________>",route?.params);
+    console.log("__________>", route?.params);
 
 
 
@@ -161,18 +161,34 @@ console.log("__________>",route?.params);
                             islistf.push(response?.data[j])
                     }
                 }
-                console.log('111', islistf);
+                console.log('-------->111', response.msg);
                 setFavoriteList(islistf)
-                setpushrecord(response.data)
+                if (response.msg == "no data found") {
+                    Alert.alert(
+                        'Oops!',
+                        'Based on the ingredients you have selected, we are sorry we didn t find any recipe. Please change the ingredients and try again.',
+                        [
+                            { text: 'Ok', onPress: () => navigation.goBack() },
+                        ],
+                        {
+                            cancelable: true
+                        }
+                    );
+
+                }
+
+                else {
+                    setpushrecord(response?.data)
+                }
             })
             // .catch(err => console.error(err));
             .catch(err => alert(err));
-            recoed.push(pushrecord)
-            setloader(false)
+        recoed.push(pushrecord)
+        setloader(false)
 
     }
     const renderfunction = ({ item }) => {
-        //console.log("___________________", item);
+        console.log("___________________", item);
         return (
             <View>
                 <View style={Styles.renderfunctionmainview}>
@@ -205,9 +221,8 @@ console.log("__________>",route?.params);
                         </TouchableOpacity>
                     </View>
                 </View>
-
-
             </View>
+
         )
     }
     return (
@@ -233,39 +248,21 @@ console.log("__________>",route?.params);
             </View>
 
 
-
-            {/* <View>
-            {pushrecord === "" ?
-            
-                <View>
-
-                </View>
-
-                :
-                <View style={{ flex: 1, justifyContent: 'flex-end' }}>
-                    <Text style={{ fontSize: FontSize.font18, textAlign: "center", color: Colors.red }}>No Recipe Availabel</Text>
-                </View>
-
-            }
-</View> */}
-
             {
                 loader ?
                     <View style={{ flex: 1, justifyContent: "center" }}>
                         <ActivityIndicator size={'large'} color={Colors.purple} />
                     </View>
                     :
-                    <FlatList
-                        data={pushrecord}
-                        keyExtractor={item => item.ID}
-                        renderItem={renderfunction}
-                    // ListFooterComponentStyle={{height:200}}
-                    />
+                    <View>
+                        <FlatList
+                            data={pushrecord}
+                            keyExtractor={item => item.ID}
+                            renderItem={renderfunction}
+                        />
+
+                    </View>
             }
-            {/* 
-            <TouchableOpacity style={{ marginTop: rh(2) }} onPress={() => navigation.navigate('RecipiesDescription', {item,muzamil})}>
-                <ForwardSvg height={'25px'} width={'25px'} />
-            </TouchableOpacity> */}
 
         </SafeAreaView >
     )

@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
@@ -14,7 +14,7 @@ const Styles = StyleSheet.create({
     color: Colors.purple,
     fontSize: FontSize.font36,
     textAlign: 'center',
-    
+
     fontWeight: '400',
   },
   whatinfridge: {
@@ -56,30 +56,30 @@ const Styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     alignItems: 'center',
   },
-  aptext:{
+  aptext: {
     height: hp(20),
     width: wp(100),
     justifyContent: 'center',
     top: hp(3),
   },
-  textviewstyle:{
+  textviewstyle: {
     alignItems: 'center',
     top: hp(5),
     height: hp(33),
-   
+
     justifyContent: 'space-around',
   },
-  svgmainstyle:{
-    flexDirection: 'row',
-    width: wp(85),
+  svgmainstyle: {
+    height: hp(10),
     alignSelf: 'center',
-    justifyContent: 'space-evenly',
-    bottom:hp(9)
+    justifyContent: 'space-between',
+
   },
-  fbgoogletext:{
-    fontSize: FontSize.fon15,
+  fbgoogletext: {
+    fontSize: FontSize.font14,
     color: Colors.black,
     fontWeight: '600',
+    textAlign: 'center'
   }
 });
 export default Styles;

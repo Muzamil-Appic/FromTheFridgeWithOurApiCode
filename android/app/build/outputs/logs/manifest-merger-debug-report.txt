@@ -9,7 +9,7 @@ MERGED from [com.facebook.flipper:flipper:0.125.0] /Users/macbook/.gradle/caches
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.125.0] /Users/macbook/.gradle/caches/transforms-3/cb0f8ee3d831365a007596b52af2d38c/transformed/jetified-flipper-network-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/macbook/.gradle/caches/transforms-3/487c13a009eb3a56c85c6dec904c7ac2/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-fbsdk-next] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:1-28:12
-MERGED from [com.facebook.android:facebook-android-sdk:13.2.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-android-sdk:14.0.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:21:1-31:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/macbook/.gradle/caches/transforms-3/234bd9fc219c5f8b08bafa6fa5f263b6/transformed/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-vector-icons] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-svg] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-svg/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
@@ -23,10 +23,10 @@ MERGED from [:react-native-google-signin_google-signin] /Users/macbook/Documents
 MERGED from [:react-native-safe-area-context] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/macbook/.gradle/caches/transforms-3/cf60852597d4cdef34ece634adbf18bf/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.android:facebook-login:13.2.0] /Users/macbook/.gradle/caches/transforms-3/343bab766f50a7677f1c674af726aaf3/transformed/jetified-facebook-login-13.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-gamingservices:13.2.0] /Users/macbook/.gradle/caches/transforms-3/629c17c077ec2dc3d6ed6c3e36a214ed/transformed/jetified-facebook-gamingservices-13.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2c2e4421c522d96e838368a05113ec6f/transformed/jetified-facebook-share-13.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:21:1-52:12
+MERGED from [com.facebook.android:facebook-login:14.0.0] /Users/macbook/.gradle/caches/transforms-3/cb651cdd425eb081e44f4614aae5280c/transformed/jetified-facebook-login-14.0.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-gamingservices:14.0.0] /Users/macbook/.gradle/caches/transforms-3/0b8db999264aaa33ab8e975d8b536aae/transformed/jetified-facebook-gamingservices-14.0.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:14.0.0] /Users/macbook/.gradle/caches/transforms-3/7fa6e27778704321a33f4ebf7386ecaf/transformed/jetified-facebook-share-14.0.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:21:1-52:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/macbook/.gradle/caches/transforms-3/88e48ebb5eca6353e6c44da5cbdf3728/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/macbook/.gradle/caches/transforms-3/b1c42f913b0df1359831e24b7ac030d4/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/macbook/.gradle/caches/transforms-3/9acab6e47f5a8bc39418078e5d48c41d/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -51,10 +51,10 @@ MERGED from [io.grpc:grpc-android:1.44.1] /Users/macbook/.gradle/caches/transfor
 MERGED from [com.google.android.material:material:1.1.0] /Users/macbook/.gradle/caches/transforms-3/748bacf36b15a1672d2f96bf8bacbcdc/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/macbook/.gradle/caches/transforms-3/f4ba5a3ff76900f9d093d35a7e39019f/transformed/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/macbook/.gradle/caches/transforms-3/01afbd0f9fd8e79e7895721300b26fc3/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-applinks:13.2.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:13.2.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:21:1-62:12
-MERGED from [com.facebook.android:facebook-bolts:13.2.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:14.0.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:14.0.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:21:1-62:12
+MERGED from [com.facebook.android:facebook-bolts:14.0.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:21:1-31:12
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/macbook/.gradle/caches/transforms-3/fce85fc1df88c0accdcc193ff8fa2927/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/macbook/.gradle/caches/transforms-3/ac040a0ca01214fe2b6372db73818228/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/macbook/.gradle/caches/transforms-3/5644da21830e1267e175b19587c85d40/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:2:1-9:12
@@ -160,34 +160,34 @@ application
 ADDED from /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/android/app/src/main/AndroidManifest.xml:8:5-33:19
 MERGED from /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/android/app/src/main/AndroidManifest.xml:8:5-33:19
 MERGED from /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/android/app/src/main/AndroidManifest.xml:8:5-33:19
-MERGED from [com.facebook.android:facebook-android-sdk:13.2.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:13.2.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:14.0.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:14.0.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:28:5-29:19
 MERGED from [:react-native-firebase_app] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-25:19
 MERGED from [:react-native-firebase_app] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-25:19
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/macbook/.gradle/caches/transforms-3/cf60852597d4cdef34ece634adbf18bf/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/macbook/.gradle/caches/transforms-3/cf60852597d4cdef34ece634adbf18bf/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:facebook-login:13.2.0] /Users/macbook/.gradle/caches/transforms-3/343bab766f50a7677f1c674af726aaf3/transformed/jetified-facebook-login-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:13.2.0] /Users/macbook/.gradle/caches/transforms-3/343bab766f50a7677f1c674af726aaf3/transformed/jetified-facebook-login-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-gamingservices:13.2.0] /Users/macbook/.gradle/caches/transforms-3/629c17c077ec2dc3d6ed6c3e36a214ed/transformed/jetified-facebook-gamingservices-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-gamingservices:13.2.0] /Users/macbook/.gradle/caches/transforms-3/629c17c077ec2dc3d6ed6c3e36a214ed/transformed/jetified-facebook-gamingservices-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2c2e4421c522d96e838368a05113ec6f/transformed/jetified-facebook-share-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2c2e4421c522d96e838368a05113ec6f/transformed/jetified-facebook-share-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:29:5-50:19
-MERGED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-login:14.0.0] /Users/macbook/.gradle/caches/transforms-3/cb651cdd425eb081e44f4614aae5280c/transformed/jetified-facebook-login-14.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:14.0.0] /Users/macbook/.gradle/caches/transforms-3/cb651cdd425eb081e44f4614aae5280c/transformed/jetified-facebook-login-14.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-gamingservices:14.0.0] /Users/macbook/.gradle/caches/transforms-3/0b8db999264aaa33ab8e975d8b536aae/transformed/jetified-facebook-gamingservices-14.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-gamingservices:14.0.0] /Users/macbook/.gradle/caches/transforms-3/0b8db999264aaa33ab8e975d8b536aae/transformed/jetified-facebook-gamingservices-14.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:14.0.0] /Users/macbook/.gradle/caches/transforms-3/7fa6e27778704321a33f4ebf7386ecaf/transformed/jetified-facebook-share-14.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:14.0.0] /Users/macbook/.gradle/caches/transforms-3/7fa6e27778704321a33f4ebf7386ecaf/transformed/jetified-facebook-share-14.0.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:29:5-50:19
 MERGED from [com.facebook.soloader:soloader:0.10.3] /Users/macbook/.gradle/caches/transforms-3/4a6a3be9ffe07d37b8325f18fa5ff1b8/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.3] /Users/macbook/.gradle/caches/transforms-3/4a6a3be9ffe07d37b8325f18fa5ff1b8/transformed/jetified-soloader-0.10.3/AndroidManifest.xml:11:5-20
 MERGED from [com.google.firebase:firebase-firestore:24.1.2] /Users/macbook/.gradle/caches/transforms-3/77193be723fe9231394208ef424cc1b4/transformed/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:24.1.2] /Users/macbook/.gradle/caches/transforms-3/77193be723fe9231394208ef424cc1b4/transformed/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/macbook/.gradle/caches/transforms-3/748bacf36b15a1672d2f96bf8bacbcdc/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] /Users/macbook/.gradle/caches/transforms-3/748bacf36b15a1672d2f96bf8bacbcdc/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-applinks:13.2.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:13.2.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:13.2.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:13.2.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:30:5-60:19
-MERGED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:30:5-60:19
-MERGED from [com.facebook.android:facebook-bolts:13.2.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-bolts:13.2.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:14.0.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:14.0.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:14.0.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:14.0.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:30:5-60:19
+MERGED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:30:5-60:19
+MERGED from [com.facebook.android:facebook-bolts:14.0.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-bolts:14.0.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.firebase:firebase-auth:21.0.5] /Users/macbook/.gradle/caches/transforms-3/a09075b6c6c7e3cde0b6586b99041b0c/transformed/jetified-firebase-auth-21.0.5/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-auth:21.0.5] /Users/macbook/.gradle/caches/transforms-3/a09075b6c6c7e3cde0b6586b99041b0c/transformed/jetified-firebase-auth-21.0.5/AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.android.gms:play-services-auth:20.2.0] /Users/macbook/.gradle/caches/transforms-3/64af2e4e85e9081926687a4df3deb2b6/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:22:5-38:19
@@ -217,7 +217,7 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/macbook/.gr
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] /Users/macbook/.gradle/caches/transforms-3/c7a27c777039b4c0b459e61365c89d71/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:13.2.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:28:18-44
+		ADDED from [com.facebook.android:facebook-android-sdk:14.0.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:28:18-44
 	android:label
 		ADDED from /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/android/app/src/main/AndroidManifest.xml:10:7-39
 		ADDED from /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/android/app/src/main/AndroidManifest.xml:10:7-39
@@ -300,8 +300,8 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/macbook/
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.125.0] /Users/macbook/.gradle/caches/transforms-3/487c13a009eb3a56c85c6dec904c7ac2/transformed/jetified-flipper-fresco-plugin-0.125.0/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-fbsdk-next] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-26:41
 MERGED from [:react-native-fbsdk-next] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-fbsdk-next/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:13.2.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:13.2.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:14.0.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:14.0.0] /Users/macbook/.gradle/caches/transforms-3/dbbcbcfd74a5a0b838344d3c5be1fee8/transformed/jetified-facebook-android-sdk-13.2.0/AndroidManifest.xml:24:5-26:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/macbook/.gradle/caches/transforms-3/234bd9fc219c5f8b08bafa6fa5f263b6/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/macbook/.gradle/caches/transforms-3/234bd9fc219c5f8b08bafa6fa5f263b6/transformed/multidex-2.0.0/AndroidManifest.xml:20:5-43
 MERGED from [:react-native-vector-icons] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-vector-icons/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -328,14 +328,14 @@ MERGED from [:react-native-screens] /Users/macbook/Documents/FROM THE FRIDGE/WIT
 MERGED from [:react-native-screens] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/macbook/.gradle/caches/transforms-3/cf60852597d4cdef34ece634adbf18bf/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-native:0.68.2] /Users/macbook/.gradle/caches/transforms-3/cf60852597d4cdef34ece634adbf18bf/transformed/jetified-react-native-0.68.2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.android:facebook-login:13.2.0] /Users/macbook/.gradle/caches/transforms-3/343bab766f50a7677f1c674af726aaf3/transformed/jetified-facebook-login-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:13.2.0] /Users/macbook/.gradle/caches/transforms-3/343bab766f50a7677f1c674af726aaf3/transformed/jetified-facebook-login-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-gamingservices:13.2.0] /Users/macbook/.gradle/caches/transforms-3/629c17c077ec2dc3d6ed6c3e36a214ed/transformed/jetified-facebook-gamingservices-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-gamingservices:13.2.0] /Users/macbook/.gradle/caches/transforms-3/629c17c077ec2dc3d6ed6c3e36a214ed/transformed/jetified-facebook-gamingservices-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2c2e4421c522d96e838368a05113ec6f/transformed/jetified-facebook-share-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2c2e4421c522d96e838368a05113ec6f/transformed/jetified-facebook-share-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:25:5-27:41
-MERGED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-login:14.0.0] /Users/macbook/.gradle/caches/transforms-3/cb651cdd425eb081e44f4614aae5280c/transformed/jetified-facebook-login-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:14.0.0] /Users/macbook/.gradle/caches/transforms-3/cb651cdd425eb081e44f4614aae5280c/transformed/jetified-facebook-login-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-gamingservices:14.0.0] /Users/macbook/.gradle/caches/transforms-3/0b8db999264aaa33ab8e975d8b536aae/transformed/jetified-facebook-gamingservices-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-gamingservices:14.0.0] /Users/macbook/.gradle/caches/transforms-3/0b8db999264aaa33ab8e975d8b536aae/transformed/jetified-facebook-gamingservices-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:14.0.0] /Users/macbook/.gradle/caches/transforms-3/7fa6e27778704321a33f4ebf7386ecaf/transformed/jetified-facebook-share-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:14.0.0] /Users/macbook/.gradle/caches/transforms-3/7fa6e27778704321a33f4ebf7386ecaf/transformed/jetified-facebook-share-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:25:5-27:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/macbook/.gradle/caches/transforms-3/88e48ebb5eca6353e6c44da5cbdf3728/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/macbook/.gradle/caches/transforms-3/88e48ebb5eca6353e6c44da5cbdf3728/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/macbook/.gradle/caches/transforms-3/b1c42f913b0df1359831e24b7ac030d4/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
@@ -384,14 +384,14 @@ MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/macbook/.gradle/caches/t
 MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/macbook/.gradle/caches/transforms-3/f4ba5a3ff76900f9d093d35a7e39019f/transformed/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/macbook/.gradle/caches/transforms-3/01afbd0f9fd8e79e7895721300b26fc3/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] /Users/macbook/.gradle/caches/transforms-3/01afbd0f9fd8e79e7895721300b26fc3/transformed/sqlite-framework-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.android:facebook-applinks:13.2.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:13.2.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:13.2.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:13.2.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-bolts:13.2.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-bolts:13.2.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:14.0.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:14.0.0] /Users/macbook/.gradle/caches/transforms-3/933a47b4316c34cdad41590769b71136/transformed/jetified-facebook-applinks-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:14.0.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:14.0.0] /Users/macbook/.gradle/caches/transforms-3/a7cab5ae46c87e6623dfce349550feb6/transformed/jetified-facebook-messenger-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-bolts:14.0.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-bolts:14.0.0] /Users/macbook/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml:24:5-26:41
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/macbook/.gradle/caches/transforms-3/fce85fc1df88c0accdcc193ff8fa2927/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/macbook/.gradle/caches/transforms-3/fce85fc1df88c0accdcc193ff8fa2927/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/macbook/.gradle/caches/transforms-3/ac040a0ca01214fe2b6372db73818228/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -583,47 +583,47 @@ ADDED from [:react-native-firebase_app] /Users/macbook/Documents/FROM THE FRIDGE
 	android:name
 		ADDED from [:react-native-firebase_app] /Users/macbook/Documents/FROM THE FRIDGE/WITH OUR API/muzamilwork/FromTheFridge/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-88
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:30:9-33:66
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:30:9-33:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:32:13-96
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:32:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:33:13-63
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:31:13-57
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:31:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:34:9-71
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:34:19-68
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:34:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:35:9-49:20
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:35:9-49:20
 	tools:node
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:38:13-31
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:38:13-31
 	android:exported
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:37:13-36
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:36:13-58
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:36:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:39:13-48:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.fromthefridge+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:39:13-48:29
 action#android.intent.action.VIEW
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:40:17-69
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:40:25-66
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:40:25-66
 category#android.intent.category.DEFAULT
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:42:17-76
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:42:17-76
 	android:name
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:42:27-73
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:42:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:43:17-78
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:43:17-78
 	android:name
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:43:27-75
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:43:27-75
 data
-ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:45:17-47:50
+ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:45:17-47:50
 	android:host
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:46:21-56
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:46:21-56
 	android:scheme
-		ADDED from [com.facebook.android:facebook-common:13.2.0] /Users/macbook/.gradle/caches/transforms-3/2519ad2cd8d5d9aef64c5d91a5061107/transformed/jetified-facebook-common-13.2.0/AndroidManifest.xml:47:21-47
+		ADDED from [com.facebook.android:facebook-common:14.0.0] /Users/macbook/.gradle/caches/transforms-3/914dc3edeb402133a1267323b2799bb4/transformed/jetified-facebook-common-14.0.0/AndroidManifest.xml:47:21-47
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:24.1.2] /Users/macbook/.gradle/caches/transforms-3/77193be723fe9231394208ef424cc1b4/transformed/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:20:13-22:85
 	android:value
@@ -631,41 +631,41 @@ ADDED from [com.google.firebase:firebase-firestore:24.1.2] /Users/macbook/.gradl
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.1.2] /Users/macbook/.gradle/caches/transforms-3/77193be723fe9231394208ef424cc1b4/transformed/jetified-firebase-firestore-24.1.2/AndroidManifest.xml:21:17-111
 uses-permission#com.google.android.gms.permission.AD_ID
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:28:5-79
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:28:5-79
 	android:name
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:28:22-76
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:28:22-76
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:41:9-44:40
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:41:9-44:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:43:13-72
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:43:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:44:13-37
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:42:13-70
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:42:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:46:9-52:20
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:46:9-52:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:48:13-37
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:48:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:47:13-86
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:47:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:49:13-51:29
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:49:13-51:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:50:17-95
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:50:25-92
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:50:25-92
 receiver#com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:53:9-59:20
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:53:9-59:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:55:13-37
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:54:13-118
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:54:13-118
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:56:13-58:29
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:56:13-58:29
 action#com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:57:17-103
+ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:57:17-103
 	android:name
-		ADDED from [com.facebook.android:facebook-core:13.2.0] /Users/macbook/.gradle/caches/transforms-3/8440117a8e937f456335e4d2a95c8817/transformed/jetified-facebook-core-13.2.0/AndroidManifest.xml:57:25-100
+		ADDED from [com.facebook.android:facebook-core:14.0.0] /Users/macbook/.gradle/caches/transforms-3/f0a93cd6c8f4efc78c1473883edfb7c7/transformed/jetified-facebook-core-14.0.0/AndroidManifest.xml:57:25-100
 activity#com.google.firebase.auth.internal.GenericIdpActivity
 ADDED from [com.google.firebase:firebase-auth:21.0.5] /Users/macbook/.gradle/caches/transforms-3/a09075b6c6c7e3cde0b6586b99041b0c/transformed/jetified-firebase-auth-21.0.5/AndroidManifest.xml:27:9-44:20
 	android:excludeFromRecents

@@ -490,6 +490,7 @@ export default function Signin({ navigation }) {
           justifyContent: 'space-around',
           alignSelf: 'center',
           alignItems: 'center',
+          bottom: hp(3)
         }}>
         <Linesvg height={'24px'} width={'30px'} />
         <Text style={{ color: '#606060', fontSize: FontSize.font13 }}>
@@ -497,72 +498,95 @@ export default function Signin({ navigation }) {
         </Text>
         <Linesvg height={'24px'} width={'30px'} />
       </View>
+
+      {/* Platform.Version >= 13  */}
       {Platform.OS === 'ios' && Platform.Version >= 13 ?
-        <View style={[Styles.svgmainstyle]}>
-          {/* <TouchableOpacity
-            onPress={() => loginWithfacebookHandler()}
-
-            style={Styles.svgstyle}>
-            <FaceBook height={'24px'} width={'24px'} />
-            <Text style={Styles.fbgoogletext}>Facebook</Text>
-          </TouchableOpacity> */}
-          <TouchableOpacity
+        <View style={{ height: hp(16), width: wp(100), justifyContent: 'space-between', alignContent: "center", bottom: hp(10), alignItems: 'center' }}>
+          <AppleButton
+            buttonStyle={AppleButton.Style.WHITE}
+            buttonType={AppleButton.Type.SIGN_IN}
+            style={{
+              width: 160,
+              height: 45,
+            }}
             onPress={() => onAppleButtonPress()}
-
-            style={Styles.svgstyle}>
-            <AppleIcon height={'24px'} width={'24px'} />
-            <Text style={Styles.fbgoogletext}>Apple</Text>
-          </TouchableOpacity>
+          />
           {googleloader ?
-            <ActivityLoader />
+            <ActivityIndicator size={'large'} color={Colors.purple} />
             :
-            <TouchableOpacity style={Styles.svgstyle}
+
+            <TouchableOpacity style={{
+              width: 160,
+              height: 45,
+              flexDirection: 'row',
+              backgroundColor: Colors.White,
+              justifyContent: "center",
+              alignContent: 'center',
+              alignItems: 'center',
+              borderRadius: 6,
+
+
+            }}
               onPress={() => onGoogleButtonPress()}
             >
-              <Google height={'24px'} width={'24px'} />
-              <Text style={Styles.fbgoogletext}>Google</Text>
+              <View style={{ right: wp(0.6), top: hp(0.1) }}>
+                <Google height={'11.3px'} width={'11.3px'} />
+              </View>
+              <Text style={Styles.fbgoogletext}>Sign in with Google</Text>
             </TouchableOpacity>
           }
+
         </View>
-
         :
-        <View style={[Styles.svgmainstyle]}>
-          {/* <TouchableOpacity
-            onPress={() => loginWithfacebookHandler()}
-
-            style={Styles.svgstyle}>
-            <FaceBook height={'24px'} width={'24px'} />
-            <Text style={Styles.fbgoogletext}>Facebook</Text>
-          </TouchableOpacity> */}
+        <View style={{ alignSelf: 'center', bottom: hp(10) }}>
           {googleloader ?
-            <ActivityLoader />
+            <ActivityIndicator size={'large'} color={Colors.purple} />
             :
-            <TouchableOpacity style={Styles.svgstyle}
+            <TouchableOpacity style={{
+              width: 160,
+              height: 45,
+              flexDirection: 'row',
+              backgroundColor: Colors.White,
+              justifyContent: "center",
+              alignContent: 'center',
+              alignItems: 'center',
+              borderRadius: 6,
+
+
+            }}
               onPress={() => onGoogleButtonPress()}
             >
-              <Google height={'24px'} width={'24px'} />
-              <Text style={Styles.fbgoogletext}>Google</Text>
+              <View style={{ right: wp(0.6), top: hp(0.1) }}>
+                <Google height={'11.3px'} width={'11.3px'} />
+              </View>
+              <Text style={Styles.fbgoogletext}>Sign in with Google</Text>
             </TouchableOpacity>
           }
+
         </View>
       }
 
-      {/* <TouchableOpacity style={Styles.svgstyle}
-        onPress={() => onGoogleButtonPress()}
-      >
-        <Google height={'24px'} width={'24px'} />
-        <Text style={Styles.fbgoogletext}>Google</Text>
-      </TouchableOpacity> */}
-
-      <View style={{ height: hp(10), top: hp(8), left: wp(5) }}>
-        <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-          <Text style={{ color: Colors.purple, fontSize: FontSize.font22 }}>
-            Create Account
-          </Text>
-        </TouchableOpacity>
-      </View>
 
 
+      {Platform.OS === 'ios' ?
+        <View style={{ height: hp(10), left: wp(5), bottom: hp(4) }}>
+          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+            <Text style={{ color: Colors.purple, fontSize: FontSize.font22 }}>
+              Create Account
+            </Text>
+          </TouchableOpacity>
+        </View>
+        :
+
+        <View style={{ height: hp(10), left: wp(5), top: hp(5) }}>
+          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
+            <Text style={{ color: Colors.purple, fontSize: FontSize.font22 }}>
+              Create Account
+            </Text>
+          </TouchableOpacity>
+
+        </View>
+      }
 
 
 

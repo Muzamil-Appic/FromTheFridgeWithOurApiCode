@@ -19,17 +19,9 @@ export default function Filter({ navigation, route }) {
 
     const [data, setdata] = useState(route?.params)
 
-    const specificingrdients = [
-        { id: 1, ingredintname: 'Apple' },
+  
 
-    ]
-
-    const categories = [
-        { id: 1, categoryname: 'snack' },
-        { id: 2, categoryname: 'snack' },
-        { id: 3, categoryname: 'snack' },
-
-    ]
+    
     const specificrederitem = ({ item, index }) => {
         return (
             <View style={{ height: rh('9'), width: rw('49'), flexDirection: "row", justifyContent: 'flex-start', alignContent: 'center', alignSelf: 'center', padding: rh(1), alignItems: 'center', paddingLeft: rw(5) }}>

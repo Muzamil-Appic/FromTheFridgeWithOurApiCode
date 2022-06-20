@@ -157,22 +157,6 @@
 			name = FBSDKCoreKit_Basics;
 			productName = FBSDKCoreKit_Basics;
 		};
-		C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 46EB2E00018F00 /* Build configuration list for PBXAggregateTarget "FBReactNativeSpec" */;
-			buildPhases = (
-			);
-			dependencies = (
-				46EB2E000305F0 /* PBXTargetDependency */,
-				46EB2E00030610 /* PBXTargetDependency */,
-				46EB2E00030630 /* PBXTargetDependency */,
-				46EB2E00030650 /* PBXTargetDependency */,
-				46EB2E00030670 /* PBXTargetDependency */,
-				46EB2E00030690 /* PBXTargetDependency */,
-			);
-			name = FBReactNativeSpec;
-			productName = FBReactNativeSpec;
-		};
 		E7E7CE52C8C68B17224FF8C262D80ABF /* RCTRequired */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 46EB2E0001E8E0 /* Build configuration list for PBXAggregateTarget "RCTRequired" */;
@@ -5672,13 +5656,6 @@
 			remoteGlobalIDString = 8CC4EAA817AA86310D1900F1DAB3580F;
 			remoteInfo = FBLazyVector;
 		};
-		46EB2E0002F4E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3496D0495E700CF08A90C41EA8FA4BB;
-			remoteInfo = FBReactNativeSpec;
-		};
 		46EB2E0002F500 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
@@ -6162,13 +6139,6 @@
 			remoteGlobalIDString = 8CC4EAA817AA86310D1900F1DAB3580F;
 			remoteInfo = FBLazyVector;
 		};
-		46EB2E0002FDA0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3496D0495E700CF08A90C41EA8FA4BB;
-			remoteInfo = FBReactNativeSpec;
-		};
 		46EB2E0002FDC0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
@@ -6623,48 +6593,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8EA62FEAB23070050EFD4D4508D659E5;
 			remoteInfo = FBSDKCoreKit_Basics;
-		};
-		46EB2E000305E0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC55D52694092A9D0E6A78EB01207EB5;
-			remoteInfo = "RCT-Folly";
-		};
-		46EB2E00030600 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7E7CE52C8C68B17224FF8C262D80ABF;
-			remoteInfo = RCTRequired;
-		};
-		46EB2E00030620 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D20469A9A1E5CFB26045EAEBE3F88E5E;
-			remoteInfo = RCTTypeSafety;
-		};
-		46EB2E00030640 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
-			remoteInfo = "React-Core";
-		};
-		46EB2E00030660 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FA877ADC442CB19CF61793D234C8B131;
-			remoteInfo = "React-jsi";
-		};
-		46EB2E00030680 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6D5DD49633DFF0657B8C3F08EB3ABA9;
-			remoteInfo = ReactCommon;
 		};
 		46EB2E000306A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -7176,13 +7104,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 53D121F9F9BB0F8AC1C94A12C5A8572F;
 			remoteInfo = "React-RCTVibration";
-		};
-		46EB2E00030FC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3496D0495E700CF08A90C41EA8FA4BB;
-			remoteInfo = FBReactNativeSpec;
 		};
 		46EB2E00030FE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27308,7 +27229,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00030FD0 /* PBXTargetDependency */,
 				46EB2E00031010 /* PBXTargetDependency */,
 				46EB2E00031030 /* PBXTargetDependency */,
 				46EB2E00031050 /* PBXTargetDependency */,
@@ -27669,7 +27589,6 @@
 				46EB2E0002F490 /* PBXTargetDependency */,
 				46EB2E0002F4B0 /* PBXTargetDependency */,
 				46EB2E0002F4D0 /* PBXTargetDependency */,
-				46EB2E0002F4F0 /* PBXTargetDependency */,
 				46EB2E0002F510 /* PBXTargetDependency */,
 				46EB2E0002F530 /* PBXTargetDependency */,
 				46EB2E0002F550 /* PBXTargetDependency */,
@@ -27804,7 +27723,6 @@
 				46EB2E0002FD50 /* PBXTargetDependency */,
 				46EB2E0002FD70 /* PBXTargetDependency */,
 				46EB2E0002FD90 /* PBXTargetDependency */,
-				46EB2E0002FDB0 /* PBXTargetDependency */,
 				46EB2E0002FDD0 /* PBXTargetDependency */,
 				46EB2E0002FDF0 /* PBXTargetDependency */,
 				46EB2E0002FE10 /* PBXTargetDependency */,
@@ -28215,7 +28133,6 @@
 				2AB2EF542954AB1C999E03BFEF8DE806 /* DoubleConversion */,
 				479BDBD165CD08E2159181E58CD2078F /* FBAEMKit */,
 				8CC4EAA817AA86310D1900F1DAB3580F /* FBLazyVector */,
-				C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */,
 				28907903AF6DD0AD321D92CD660E7E23 /* FBSDKCoreKit */,
 				8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */,
 				6289EFA39E197DB337F4C6BD53D11368 /* FBSDKGamingServicesKit */,
@@ -31169,12 +31086,6 @@
 			target = 8CC4EAA817AA86310D1900F1DAB3580F /* FBLazyVector */;
 			targetProxy = 46EB2E0002F4C0 /* PBXContainerItemProxy */;
 		};
-		46EB2E0002F4F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBReactNativeSpec;
-			target = C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */;
-			targetProxy = 46EB2E0002F4E0 /* PBXContainerItemProxy */;
-		};
 		46EB2E0002F510 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSDKCoreKit;
@@ -31589,12 +31500,6 @@
 			target = 8CC4EAA817AA86310D1900F1DAB3580F /* FBLazyVector */;
 			targetProxy = 46EB2E0002FD80 /* PBXContainerItemProxy */;
 		};
-		46EB2E0002FDB0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBReactNativeSpec;
-			target = C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */;
-			targetProxy = 46EB2E0002FDA0 /* PBXContainerItemProxy */;
-		};
 		46EB2E0002FDD0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSDKCoreKit;
@@ -31984,42 +31889,6 @@
 			name = FBSDKCoreKit_Basics;
 			target = 8EA62FEAB23070050EFD4D4508D659E5 /* FBSDKCoreKit_Basics */;
 			targetProxy = 46EB2E000305C0 /* PBXContainerItemProxy */;
-		};
-		46EB2E000305F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "RCT-Folly";
-			target = EC55D52694092A9D0E6A78EB01207EB5 /* RCT-Folly */;
-			targetProxy = 46EB2E000305E0 /* PBXContainerItemProxy */;
-		};
-		46EB2E00030610 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTRequired;
-			target = E7E7CE52C8C68B17224FF8C262D80ABF /* RCTRequired */;
-			targetProxy = 46EB2E00030600 /* PBXContainerItemProxy */;
-		};
-		46EB2E00030630 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RCTTypeSafety;
-			target = D20469A9A1E5CFB26045EAEBE3F88E5E /* RCTTypeSafety */;
-			targetProxy = 46EB2E00030620 /* PBXContainerItemProxy */;
-		};
-		46EB2E00030650 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "React-Core";
-			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
-			targetProxy = 46EB2E00030640 /* PBXContainerItemProxy */;
-		};
-		46EB2E00030670 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "React-jsi";
-			target = FA877ADC442CB19CF61793D234C8B131 /* React-jsi */;
-			targetProxy = 46EB2E00030660 /* PBXContainerItemProxy */;
-		};
-		46EB2E00030690 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ReactCommon;
-			target = B6D5DD49633DFF0657B8C3F08EB3ABA9 /* ReactCommon */;
-			targetProxy = 46EB2E00030680 /* PBXContainerItemProxy */;
 		};
 		46EB2E000306B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -32458,12 +32327,6 @@
 			name = "React-RCTVibration";
 			target = 53D121F9F9BB0F8AC1C94A12C5A8572F /* React-RCTVibration */;
 			targetProxy = 46EB2E00030FA0 /* PBXContainerItemProxy */;
-		};
-		46EB2E00030FD0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBReactNativeSpec;
-			target = C3496D0495E700CF08A90C41EA8FA4BB /* FBReactNativeSpec */;
-			targetProxy = 46EB2E00030FC0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00030FF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -33467,41 +33330,6 @@
 		46EB2E00018EB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46EB2E00018ED0 /* FBLazyVector.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		46EB2E00018F10 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00018F50 /* FBReactNativeSpec.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		46EB2E00018F20 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00018F40 /* FBReactNativeSpec.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -36669,15 +36497,6 @@
 			buildConfigurations = (
 				46EB2E00018EB0 /* Debug */,
 				46EB2E00018EA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46EB2E00018F00 /* Build configuration list for PBXAggregateTarget "FBReactNativeSpec" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				46EB2E00018F20 /* Debug */,
-				46EB2E00018F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
