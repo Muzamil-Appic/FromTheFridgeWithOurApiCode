@@ -8,7 +8,7 @@ import {
 } from 'react-native-responsive-screen';
 import { AppleButton } from '@invertase/react-native-apple-authentication';
 import { appleAuth } from '@invertase/react-native-apple-authentication';
-
+import Toast from 'react-native-simple-toast';
 //  import { AppleAuthRequestOperation ,appleAuth} from '@invertase/react-native-apple-authentication';
 import AppleIcon from '../../Assets/Icons/AppleIcon.svg'
 //Global
@@ -23,6 +23,8 @@ GoogleSignin.configure({
   webClientId: '324447483484-7g1ue1gd2eeqb6te3e57sqied9edc33k.apps.googleusercontent.com',
   offlineAccess: true
 });
+
+
 
 //firebase
 import auth from '@react-native-firebase/auth';
@@ -195,6 +197,7 @@ export default function Signin({ navigation }) {
 
       }).then(() => {
         navigation.replace('TabNavigations')
+        Toast.show("Login Successfull")
       })
       .catch((error) => {
         alert(error)
@@ -307,6 +310,7 @@ export default function Signin({ navigation }) {
     await GoogleSignin.hasPlayServices();
     console.log("Step 3");
     const userinfo = await GoogleSignin.signIn();
+    console.log(userinfo);
     console.log("Step 4");
     // console.log("------->user infooooo909090", userinfo)
     const googleCredential = auth.GoogleAuthProvider.credential(userinfo.idToken);
@@ -342,6 +346,7 @@ export default function Signin({ navigation }) {
         empty();
         navigation.replace('TabNavigations')
         setgoogleloader(false)
+        Toast.show("Login Successfull")
       })
       .catch((error) => {
         setgoogleloader(false)
@@ -380,7 +385,7 @@ export default function Signin({ navigation }) {
         empty()
         setloader(false)
         navigation.replace('TabNavigations')
-        console.log("DONE dona DOne");
+        Toast.show("Login Successfull")
       }
       )
       .catch((error) => {
@@ -539,29 +544,27 @@ export default function Signin({ navigation }) {
         </View>
         :
         <View style={{ alignSelf: 'center', bottom: hp(10) }}>
-          {googleloader ?
-            <ActivityIndicator size={'large'} color={Colors.purple} />
-            :
-            <TouchableOpacity style={{
-              width: 160,
-              height: 45,
-              flexDirection: 'row',
-              backgroundColor: Colors.White,
-              justifyContent: "center",
-              alignContent: 'center',
-              alignItems: 'center',
-              borderRadius: 6,
+
+          <TouchableOpacity style={{
+            width: 160,
+            height: 45,
+            flexDirection: 'row',
+            backgroundColor: Colors.White,
+            justifyContent: "center",
+            alignContent: 'center',
+            alignItems: 'center',
+            borderRadius: 6,
 
 
-            }}
-              onPress={() => onGoogleButtonPress()}
-            >
-              <View style={{ right: wp(0.6), top: hp(0.1) }}>
-                <Google height={'11.3px'} width={'11.3px'} />
-              </View>
-              <Text style={Styles.fbgoogletext}>Sign in with Google</Text>
-            </TouchableOpacity>
-          }
+          }}
+            onPress={() => onGoogleButtonPress()}
+          >
+            <View style={{ right: wp(0.6), top: hp(0.1) }}>
+              <Google height={'11.3px'} width={'11.3px'} />
+            </View>
+            <Text style={Styles.fbgoogletext}>Sign in with Google</Text>
+          </TouchableOpacity>
+
 
         </View>
       }

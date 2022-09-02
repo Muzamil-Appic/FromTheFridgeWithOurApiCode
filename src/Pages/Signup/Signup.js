@@ -15,7 +15,7 @@ import {
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-
+import Toast from 'react-native-simple-toast';
 
 
 //firebase
@@ -529,7 +529,7 @@ export default function Signup({ navigation }) {
           empty();
           navigation.navigate('Signin')
           setloader(false)
-
+          Toast.show("Signup Successfull")
         })
       })
       .catch((error) => {
@@ -639,7 +639,7 @@ export default function Signup({ navigation }) {
                 borderBottomColor: Colors.purple,
               },
             ]}
-            placeholder="Sure Name"
+            placeholder="Surname"
             placeholderTextColor={Colors.dark}
             onChangeText={value => { setsureName(value), setvalidatesurename(false) }}
             value={sureName}

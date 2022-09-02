@@ -4,6 +4,9 @@
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-13.2.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-14.1.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-14.1.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c3d7a21e3ec16ab8bdd80c82ae140cea/transformed/jetified-facebook-bolts-14.1.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-bolts/13.2.0/736e6c08c1bd9e2adebcf64483e54c6c2188b902/facebook-bolts-13.2.0-javadoc.jar!/" />
