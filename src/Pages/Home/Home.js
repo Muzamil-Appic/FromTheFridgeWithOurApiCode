@@ -1373,7 +1373,7 @@ export default function Home({ navigation }) {
   return (
     <SafeAreaView style={Styles.Container}>
       <View>
-        <Text style={Styles.toptext}>FromTheFridge</Text>
+        <Text style={Styles.toptext}>FromFridge</Text>
       </View>
       <View style={{ flex: 1 }}>
         <View

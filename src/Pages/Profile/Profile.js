@@ -225,8 +225,8 @@ export default function Profile({ navigation }) {
                     <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
                         <View style={Styles.topvw}>
                             <TextInput placeholder='Name' value={name} onChangeText={value => setname(value)} style={Styles.txtinptmailname} placeholderTextColor={Colors.dark} />
-                            <View style={{ height: rh(7), width: rw(80), borderRadius: 40, backgroundColor: Colors.txtinptcolor, justifyContent: 'center', alignContent: "center", alignItems: "center" }}>
-                                <Text style={{ fontSize: FontSize.font17, paddingLeft: rw(7), color: Colors.black, paddingRight: rw(2), alignSelf: "center", }} > {email}</Text>
+                            <View style={{ height: rh(7), width: rw(80), borderRadius: 40, backgroundColor: Colors.txtinptcolor,justifyContent:'center'}}>
+                                <Text style={{ fontSize: FontSize.font17,  color: Colors.black,paddingLeft:rw(7) }} numberOfLines={1} > {email}</Text>
                             </View>
                             <TouchableOpacity style={Styles.chngpasbtn}
                                 onPress={() => setModalVisible(true)}

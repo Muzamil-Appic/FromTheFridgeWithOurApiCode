@@ -171,33 +171,48 @@ export default function Signin({ navigation }) {
         console.log("Step 3---->");
         console.log('====================================');
         console.log("----->", loggeduser.additionalUserInfo);
-        console.log('====================================');
-        console.log("Step 4---->");
-        console.log('====================================');
-        console.log("----->", loggeduser.user);
-        console.log('====================================');
-        const userdata = firestore_ref.doc(loggeduser.user.email)
-        userdata.set({
-          email: loggeduser.user.email,
-          id: loggeduser.user.email,
-          name: '',
-          phonenumber: '',
-          country: '',
-          city: '',
-          address: '',
-        }, { merge: true }).then(
+
+        if (loggeduser.additionalUserInfo?.isNewUser === true) {
+          console.log('====================================');
+          console.log("Step 4---->");
+          console.log('====================================');
+          console.log("----->", loggeduser.user);
+          console.log('====================================');
+          const userdata = firestore_ref.doc(loggeduser.user.email)
+          userdata.set({
+            email: loggeduser.user.email,
+            id: loggeduser.user.email,
+            name: '',
+            phonenumber: '',
+            country: '',
+            city: '',
+            address: '',
+          }, { merge: true }).then(
+            AsyncStorage.setItem(
+              'userdetails',
+              JSON.stringify({
+                email: loggeduser.user.email,
+                id: loggeduser.user.email,
+              })
+            )
+           
+          )
+          navigation.replace('TabNavigations')
+          Toast.show("Login Successfull")
+        }
+        else {
           AsyncStorage.setItem(
             'userdetails',
             JSON.stringify({
-              email: loggeduser.user.email,
+              email: loggeduser.user.email, 
               id: loggeduser.user.email,
             })
           )
-        )
+          navigation.replace('TabNavigations')
+          Toast.show("Login Successfull")
 
-      }).then(() => {
-        navigation.replace('TabNavigations')
-        Toast.show("Login Successfull")
+        }
+
       })
       .catch((error) => {
         alert(error)
@@ -305,7 +320,7 @@ export default function Signin({ navigation }) {
 
   async function onGoogleButtonPress() {
     console.log("Step 1");
-    setgoogleloader(true)
+    
     console.log("Step 2");
     await GoogleSignin.hasPlayServices();
     console.log("Step 3");
@@ -345,11 +360,11 @@ export default function Signin({ navigation }) {
       }).then(() => {
         empty();
         navigation.replace('TabNavigations')
-        setgoogleloader(false)
+        
         Toast.show("Login Successfull")
       })
       .catch((error) => {
-        setgoogleloader(false)
+       
         alert(error)
         //     console.log("Error---->", error);
       })
@@ -434,7 +449,7 @@ export default function Signin({ navigation }) {
   return (
     <SafeAreaView style={Styles.Container}>
       <View style={Styles.aptext}>
-        <Text style={Styles.fromtheFridgetext}>FromTheFridge</Text>
+        <Text style={Styles.fromtheFridgetext}>FromFridge</Text>
         <Text style={Styles.whatinfridge}>What’s in your fridge?</Text>
       </View>
       <View style={Styles.textviewstyle}>
